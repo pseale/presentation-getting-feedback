@@ -11,9 +11,9 @@ This repo contains the outline and examples for my brief talk "tools for constru
   - Syntax highlighting is missing in places! e.g. Handlebars template strings; string interpolation
 - linting - squigglies and format-on-save tools like prettier
 - logging
+- tests
 - REPL - vanilla REPL
 - debugger - REPL in your text editor
-- tests
 - someone else talk about how a strong type system helps - being guided by the compiler - QED
 - without type safety, precondition checks (design by contract)
 - design techniques?
@@ -34,4 +34,9 @@ python if statement
 python check if folder exists
 python logging to console
 python if else if
+python set logging level
+python test example
+python return statement
+python import local file same directory
+python convert to string
 ```
