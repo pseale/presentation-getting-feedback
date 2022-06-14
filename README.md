@@ -8,15 +8,14 @@ This repo contains the outline and examples for my brief talk "tools for constru
   - Rob Pike: "Syntax highlighting is juvenile. When I was a child, I was taught arithmetic using colored rods. I grew up and today I use monochromatic numerals" - Rob Pike is very, very wrong
 - code-and-fix
 - syntax highlighting
-  - Syntax highlighting is missing in places! e.g. Handlebars template strings; string interpolation
-- linting - squigglies and format-on-save tools like prettier
+- linting
 - logging
 - tests
 - REPL - vanilla REPL
 - debugger - REPL in your text editor
-- someone else talk about how a strong type system helps - being guided by the compiler - QED
-- without type safety, precondition checks (design by contract)
-- not covered: design techniques?
+- not discussed: strong type system. QED
+- not discussed: without type safety, precondition checks (design by contract)
+- not discussed: design techniques? How do you decide what to build?
 
 # I don't know Python - here are searches I have run while doing recent Python work
 
@@ -41,9 +40,7 @@ python import local file same directory
 python convert to string
 ```
 
-# detailed outline
-
-# Outline
+# Detailed outline
 
 - I'm Peter, I'm here to talk about building software, and putting more tools in your toolbox.
 - I'm not an expert and I encourage others to jump in. My goal is to get us all to share what tips we have.
@@ -56,17 +53,17 @@ python convert to string
   - HYPOTHESIS: strong programmers do not need tools like the rest of us
   - however, the rest of us can get very far with tools
   - **thus, lean on every tool possible**
+  - **GROUP: when was the last time you programmed completely freehand--without syntax highlighting?**
+  - **GROUP: do you have war stories about strong programmers you've worked with (or otherwise)? Follow-up: can you program like they do?**
 - programmers at rest: code-and-fix
   - this is the bare minimum mental energy required to solve a problem
+  - **GROUP: what major advantage does this have? cognitive load/survival**
   - **When was the last time someone did code-and-fix style development, and why?** No debugger, no console logging, no tests.
     - my answer: recently, these python scripts; VBA/Excel; rudimentary bash
 - syntax highlighting
   - DEMO: open file 01 in notepad, tell them to figure out what is wrong. Wait a minute. Now open the file in VS Code.
-  - Syntax highlighting is missing in places! e.g. Handlebars template strings; string interpolation
-  - DEMO: open `01-syntax-highlighting\03-advanced-syntax-highlighting.py` and pay attention to highlighting of format strings. Some have it, some don't.
-  - **Where do we notice better/worse syntax highlighting?** I'll give you a hint--it's everywhere that's not a text editor. Websites, blogs, etc.
+  - syntax highlighting is an easy win
   - TAKEAWAY: agree that Rob Pike is wrong
-  - **GROUP: we agree that syntax highlighting is a win, right? We're not crazy, right?**
 - linting, autoformatters
 
   - linting gives you early feedback when your program is invalid. It could be a check that runs in an automated build, or the squigglies you see in your editor, or a kind of linter that runs a format-on-save if your code is valid.
@@ -89,6 +86,7 @@ python convert to string
   - **GROUP: May someone give a good-faith answer as to what it costs to write tests? Hint: strong programmers**
   - **GROUP: when are tests useful for you? When are tests definitely the wrong thing to do?**
 - REPL - vanilla REPL
+  - really important: I wrote a bug, roughly 4 times, in fizzbuzz, before finding the bug via the REPL
   - DEMO: `python -i` and run through the experience - follow `05-repl\repl-session.md` (open this in Markdown Preview)
   - **GROUP: Who builds software in the REPL? Please describe the experience. What do you like about a REPL? How do you 'productionalize' your REPL code?**
 - debugger
