@@ -1,6 +1,8 @@
 # Introduction
 
-This repo contains the outline and examples for my brief talk "tools for constructing software."
+This repo contains the outline and demos for my brief talk "tools for constructing software."
+
+My goal with this talk is to get us talking about our workflow, honestly, what we actually do. And by sharing and comparing notes, we'll gain new perspective, maybe some new ideas, or at minimum feel better about ourselves and our personal failings. 
 
 # Outline
 
@@ -17,6 +19,7 @@ This repo contains the outline and examples for my brief talk "tools for constru
 - not discussed: without type safety, precondition checks (design by contract)
 - not discussed: design techniques? How does one decide what to build?
 - not discussed: GitHub Copilot
+- not discussed: 'notebooks'
 
 # I don't know Python - here are searches I have run while doing recent Python work
 
@@ -48,9 +51,10 @@ python convert to string
 - Not an expert (see python searches)
 - Set expectations: I have some good tips, and I will share them. I have good perspective, and I will share it. I will be very honest about my impure dev workflow.
 - Expectations for you: I seriously believe I am not the best person in the room to give perspective on any specific technique. Y'all jump in and share your experience.
+- Expectations for FP group: this is not a FP talk. This is a blue-collar programmer talk. This isn't state-of-the-art, it is state-of-the-industry
 - Takeaways: Ideally, we learn how to extract the maximum value out of each technique, and maybe even get exposed to new-to-us techniques.
 - general theme: strong programmers don't need tools--but the rest of us do
-  - I am not a naturally strong programmer - I make lots of easy mistakes and thus rely on every available tool to help
+  - I am not a naturally strong programmer - I make lots of easy mistakes and thus rely on every available tool to help. I am effective by mastering the tools and augmenting my weakness
   - Quote from a strong programmer: Rob Pike: "Syntax highlighting is juvenile. When I was a child, I was taught arithmetic using colored rods. I grew up and today I use monochromatic numerals" - Rob Pike is very, very wrong
   - He's totally wrong about syntax highlighting...HOWEVER...he has a valuable point. **What is his point? Good-faith explanation?**
   - HYPOTHESIS: strong programmers do not need tools like the rest of us
@@ -67,7 +71,7 @@ python convert to string
   - DEMO: open file 01 in notepad, tell them to figure out what is wrong. Wait a minute. Now open the file in VS Code.
   - syntax highlighting is an easy win
   - TAKEAWAY: agree that Rob Pike is wrong
-- linting, autoformatters
+- linting, autoformatters, IDE features like navigating to library source, autodoc contet menus, autocomplete
 
   - linting gives you early feedback when your program is invalid. It could be a check that runs in an automated build, or the squigglies you see in your editor, or a kind of linter that runs a format-on-save if your code is valid.
   - I have grouped autoformatter tools (prettier) with linters. They're not the same, but their functionality overlaps
