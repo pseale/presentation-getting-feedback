@@ -46,13 +46,14 @@ python convert to string
 
 # Detailed outline
 
-- I'm Peter, I'm here to talk about building software
-- Good, unique perspective: constantly shifting technology stacks, lots of experience, not a naturally strong programmer, and I keep my ear to the streets
-- Not an expert (see python searches)
-- Set expectations: I have some good tips, and I will share them. I have good perspective, and I will share it. I will be very honest about my impure dev workflow.
-- Expectations for you: I seriously believe I am not the best person in the room to give perspective on any specific technique. Y'all jump in and share your experience.
-- Expectations for FP group: this is not a FP talk. This is a blue-collar programmer talk. This isn't state-of-the-art, it is state-of-the-industry
-- Takeaways: Ideally, we learn how to extract the maximum value out of each technique, and maybe even get exposed to new-to-us techniques.
+- I'm Peter, I'm here to talk about building software, focusing on tools.
+  - not covered: design (e.g. how to break down problems)
+  - Good, unique perspective: constantly shifting technology stacks, lots of experience, not a naturally strong programmer, and I keep my ear to the streets
+  - Not an expert (see python searches)
+  - Set expectations: I have some good tips, and I will share them. I have good perspective, and I will share it. I will be very honest about my impure dev workflow.
+  - Expectations for you: I seriously believe I am not the best person in the room to give perspective on any specific technique. Y'all jump in and share your experience.
+  - Expectations for FP group: this is not a FP talk. This is a blue-collar programmer talk. This isn't state-of-the-art, it is state-of-the-industry
+  - Takeaways: Ideally, we learn how to extract the maximum value out of each technique, and maybe even get exposed to new-to-us techniques.
 - general theme: strong programmers don't need tools--but the rest of us do
   - I am not a naturally strong programmer - I make lots of easy mistakes and thus rely on every available tool to help. I am effective by mastering the tools and augmenting my weakness
   - Quote from a strong programmer: Rob Pike: "Syntax highlighting is juvenile. When I was a child, I was taught arithmetic using colored rods. I grew up and today I use monochromatic numerals" - Rob Pike is very, very wrong
