@@ -66,6 +66,7 @@ python convert to string
 - programmers at rest: code-and-fix
   - this is the bare minimum mental energy required to solve a problem
   - **GROUP: what major advantage does this have? cognitive load/survival**
+  - **GROUP: when is this approach 100% appropriate? when you're a strong enough programmer (ignoring the value of having automated tests to catch regressions)**
   - **When was the last time someone did code-and-fix style development, and why?** No debugger, no console logging, no tests.
     - my answer: ; today (2022-06-15) in python; VBA/Excel;
 - syntax highlighting
