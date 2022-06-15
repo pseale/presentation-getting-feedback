@@ -5,7 +5,7 @@ This repo contains the outline and examples for my brief talk "tools for constru
 # Outline
 
 - general theme: strong programmers don't need tools--but the rest of us do, so ignore the strong programmers
-  - Rob Pike: "Syntax highlighting is juvenile. When I was a child, I was taught arithmetic using colored rods. I grew up and today I use monochromatic numerals" - Rob Pike is very, very wrong
+  - Rob Pike: "Syntax highlighting is juvenile. When I was a child, I was taught arithmetic using colored rods. I grew up and today I use monochromatic numerals" - Rob Pike is very, very wrong - but correct in a vague, general sense 
 - code-and-fix
 - syntax highlighting
 - linting
@@ -15,7 +15,8 @@ This repo contains the outline and examples for my brief talk "tools for constru
 - debugger - REPL in your text editor
 - not discussed: strong type system. QED
 - not discussed: without type safety, precondition checks (design by contract)
-- not discussed: design techniques? How do you decide what to build?
+- not discussed: design techniques? How does one decide what to build?
+- not discussed: GitHub Copilot
 
 # I don't know Python - here are searches I have run while doing recent Python work
 
@@ -42,14 +43,16 @@ python convert to string
 
 # Detailed outline
 
-- I'm Peter, I'm here to talk about building software, and putting more tools in your toolbox.
-- I'm not an expert and I encourage others to jump in. My goal is to get us all to share what tips we have.
-- DEMO: recent (shameful) python searches
-- I have my own little tips, many of them, but do jump in!
-- general theme: strong programmers don't need tools--but the rest of us do, so ignore the strong programmers
+- I'm Peter, I'm here to talk about building software
+- Good, unique perspective: constantly shifting technology stacks, lots of experience, not a naturally strong programmer, and I keep my ear to the streets
+- Not an expert (see python searches)
+- Set expectations: I have some good tips, and I will share them. I have good perspective, and I will share it. I will be very honest about my impure dev workflow.
+- Expectations for you: I seriously believe I am not the best person in the room to give perspective on any specific technique. Y'all jump in and share your experience.
+- Takeaways: Ideally, we learn how to extract the maximum value out of each technique, and maybe even get exposed to new-to-us techniques.
+- general theme: strong programmers don't need tools--but the rest of us do
   - I am not a naturally strong programmer - I make lots of easy mistakes and thus rely on every available tool to help
   - Quote from a strong programmer: Rob Pike: "Syntax highlighting is juvenile. When I was a child, I was taught arithmetic using colored rods. I grew up and today I use monochromatic numerals" - Rob Pike is very, very wrong
-  - He's totally wrong about syntax highlighting, but he has a valuable point that applies generally (elsewhere). **What is his point? Good-faith explanation?**
+  - He's totally wrong about syntax highlighting...HOWEVER...he has a valuable point. **What is his point? Good-faith explanation?**
   - HYPOTHESIS: strong programmers do not need tools like the rest of us
   - however, the rest of us can get very far with tools
   - **thus, lean on every tool possible**
@@ -59,7 +62,7 @@ python convert to string
   - this is the bare minimum mental energy required to solve a problem
   - **GROUP: what major advantage does this have? cognitive load/survival**
   - **When was the last time someone did code-and-fix style development, and why?** No debugger, no console logging, no tests.
-    - my answer: recently, these python scripts; VBA/Excel; rudimentary bash
+    - my answer: ; today (2022-06-15) in python; VBA/Excel;
 - syntax highlighting
   - DEMO: open file 01 in notepad, tell them to figure out what is wrong. Wait a minute. Now open the file in VS Code.
   - syntax highlighting is an easy win
