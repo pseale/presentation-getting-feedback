@@ -68,36 +68,39 @@ python convert to string
   - **GROUP: what major advantage does this have? cognitive load/survival**
   - **GROUP: when is this approach 100% appropriate? when you're a strong enough programmer (ignoring the value of having automated tests to catch regressions)**
   - **When was the last time someone did code-and-fix style development, and why?** No debugger, no console logging, no tests.
-    - my answer: ; today (2022-06-15) in python; VBA/Excel;
+    - my answer: today (2022-06-15) in python; VBA/Excel;
 - syntax highlighting
   - DEMO: open file 01 in notepad, tell them to figure out what is wrong. Wait a minute. Now open the file in VS Code.
   - syntax highlighting is an easy win
   - TAKEAWAY: agree that Rob Pike is wrong
-- linting, autoformatters, IDE features like navigating to library source, autodoc contet menus, autocomplete
+- linting, autoformatters
 
   - linting gives you early feedback when your program is invalid. It could be a check that runs in an automated build, or the squigglies you see in your editor, or a kind of linter that runs a format-on-save if your code is valid.
   - I have grouped autoformatter tools (prettier) with linters. They're not the same, but their functionality overlaps
   - DEMO: run `node 02-linting\fizzbuzz-format-on-save.js` - note it is a working program. Now open it in the text editor. Make sure everyone sees the horror. Now add a space and save (to run prettier)
   - Linters and autoformatters are great for sanity on a team
-  - **QUESTION: Where are linters most useful for you? How do they help? Do they catch bugs?**
-  - **QUESTION: Why don't you use a linter everywhere? There is a real, valid answer**
+  - **QUESTION: How do linters help construct software? How else do they help?**
+  - **QUESTION: When are linters not worth it? What makes linting a drag?**
 
 - logging
   - logging is defined here as: diagnostic logs in text form, either to the console, to a text file, or to a centralized Enterprise Log Aggregation System
+  - focusing on how logging is useful during software construction, not after it's shipped
   - DEMO: open `03-logging\fizzbuzz.py` and run `python 03-logging\fizzbuzz.py`
     - NOTE: to simulate an environment where you can't see the results immediately, I added logging
     - **GROUP: criticize these logs. Too noisy, definitely, right? What could you log differently? What can't you log sometimes (real data, pws)?**
-    - **GROUP: how do logs help you? Do you leave the logs in after completing? Or do you follow the unix philosophy of zero-output == perfect run?**
+    - **GROUP: how do logs help you? Do you leave the logs in after completing? What are the downsides of all this logging? When is logging juvenile?**
 - tests
   - DEMO: open `04-tests\main.py`, `04-tests\fizzbuzz.py` and run `pytest .\fizzbuzz.py -v` from terminal
   - **GROUP: Are these tests okay? Do your best to criticize them. I can handle it.**
   - **GROUP: May someone explain why tests are useful? I'll grade your response on the scale between D+ and F-**
   - **GROUP: May someone give a good-faith answer as to what it costs to write tests? Hint: strong programmers**
-  - **GROUP: when are tests useful for you? When are tests definitely the wrong thing to do?**
+  - **GROUP: when are tests useful for you?**
+  - **When are tests definitely the wrong thing to do? When are tests juvenile?**
 - REPL - vanilla REPL
   - really important: I wrote a bug, roughly 4 times, in fizzbuzz, before finding the bug via the REPL
   - DEMO: `python -i` and run through the experience - follow `05-repl\repl-session.md` (open this in Markdown Preview)
   - **GROUP: Who builds software in the REPL? Please describe the experience. What do you like about a REPL? How do you 'productionalize' your REPL code?**
+  - **GROUP: there are zero downsides to the REPL. Anyway, moving on.**
 - debugger
   - my personal favorite crutch to lean on
   - DEMO: open `06-debugger\fizzbuzz.py` and step through the code
@@ -105,6 +108,7 @@ python convert to string
     - note the locals window
     - note the quickwatch
     - note the `Debug Console` in vscode - AKA an Immediate Window, AKA a REPL with context
+  - **GROUP: When is relying on the debugger juvenile?**
   - **GROUP: tell me how the mindlessly running the debugger can be a trap. Talk about what to do if you find yourself mindlessly stepping through in the debugger. Take a literal walk?**
   - **GROUP: talk up how the debugger will NOT rot your mind.**
 - conclusion: lean on every tool available to you; add them all to your toolbox
@@ -112,3 +116,4 @@ python convert to string
 - not discussed: strong type system. QED
 - not discussed: without type safety, precondition checks (design by contract)
 - not discussed: design techniques? How do you decide what to build?
+- not discussed: pair programming - very very helpful, for ~most tasks is a net win. Swallow your shame and pair up
